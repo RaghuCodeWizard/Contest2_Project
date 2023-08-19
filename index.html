@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library System</title>
+ 
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#books">Books</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <section id="books" class="books-section">
+    <h2>Books</h2>
+    <table class="books-table">
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <span class="book-title">Harry Potter and the Sorcerer's Stone</span>
+            <div class="nested-table">
+              <table>
+                <tr>
+                  <td><strong>Publication Date:</strong></td>
+                  <td>June 26, 1997</td>
+                </tr>
+                <tr>
+                  <td><strong>Page Count:</strong></td>
+                  <td>320</td>
+                </tr>
+                <tr>
+                  <td><strong>ISBN:</strong></td>
+                  <td>978-0-7475-3269-9</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>J.K. Rowling</td>
+          <td>Fantasy</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <span class="book-title">The Great Gatsby</span>
+            <div class="nested-table">
+              <table>
+                <tr>
+                  <td><strong>Publication Date:</strong></td>
+                  <td>April 10, 1925</td>
+                </tr>
+                <tr>
+                  <td><strong>Page Count:</strong></td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <td><strong>ISBN:</strong></td>
+                  <td>978-0-7432-7356-5</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Classic</td>
+          <td>Not Available</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <span class="book-title">To Kill a Mockingbird</span>
+            <div class="nested-table">
+              <table>
+                
+                <tr>
+                  <td><strong>Publication Date:</strong></td>
+                  <td>July 11, 1960</td>
+                </tr>
+                <tr>
+                  <td><strong>Page Count:</strong></td>
+                  <td>281</td>
+                </tr>
+                <tr>
+                  <td><strong>ISBN:</strong></td>
+                  <td>978-0-06-112008-4</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>Harper Lee</td>
+          <td>Novel</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <span class="book-title">1984</span>
+            <div class="nested-table">
+              <table>
+                <tr>
+                  <td><strong>Publication Date:</strong></td>
+                  <td>June 8, 1949</td>
+                </tr>
+                <tr>
+                  <td><strong>Page Count:</strong></td>
+                  <td>328</td>
+                </tr>
+                <tr>
+                  <td><strong>ISBN:</strong></td>
+                  <td>978-0-452-28423-4</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>George Orwell</td>
+          <td>Dystopian</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <span class="book-title">Pride and Prejudice</span>
+            <div class="nested-table">
+              <table>
+                <tr>
+                  <td><strong>Publication Date:</strong></td>
+                  <td>January 28, 1813</td>
+                </tr>
+                <tr>
+                  <td><strong>Page Count:</strong></td>
+                  <td>432</td>
+                </tr>
+                <tr>
+                  <td><strong>ISBN:</strong></td>
+                  <td>978-0-14-143951-8</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>Jane Austen</td>
+          <td>Classic</td>
+          <td>Available</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="register" class="register-section">
+    <h2>Register</h2>
+    <form action="#" method="post" class="registration-form">
+      <table class="registration-table">
+        <tr>
+          <td><label for="first-name">First Name:</label></td>
+          <td><input type="text" id="first-name" name="first-name" required></td>
+        </tr>
+        <tr>
+          <td><label for="last-name">Last Name:</label></td>
+          <td><input type="text" id="last-name" name="last-name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" id="age" name="age" min="5" max="100" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td><label for="confirm-password">Confirm Password:</label></td>
+          <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+        </tr>
+      </table>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>

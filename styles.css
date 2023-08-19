@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+  }
+  
+  
+
+  .navbar {
+    background-color: #0b4f69;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+  }
+  .book-title{
+background-color: rgb(231, 210, 230);
+
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .navbar a:hover {
+    background-color: #2b41c2; 
+    color: #ecf0f1;
+  }
+  
+  .books-section,
+  .register-section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .books-table,
+  .registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+  }
+  
+  
+  
+  .books-table th,
+  .books-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #b1a6a6;
+  }
+  .books-table th,
+  .books-table td,
+  .registration-table th,
+  .registration-table td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .books-table th,
+  .registration-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .book-title {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .nested-table {
+    display: block;
+  }
+  
+  /* Show the nested table when hovering over the book title */
+  .book-title:hover + .nested-table {
+    display: block;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration-table label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .registration-table input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .registration-table button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .registration-table button:hover {
+    background-color: #555;
+  }
+  
+ 
+  .books-section,
+  .register-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+  
